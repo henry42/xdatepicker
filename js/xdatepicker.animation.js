@@ -133,12 +133,13 @@
           ( window.getComputedStyle ?
               element.calendarcontent.ownerDocument.defaultView.getComputedStyle(element.calendarcontent,null) :
               element.calendarcontent.currentStyle || {} )
-          ['margin-left'],10)
+          ['marginLeft'],10)
         || 0;
-
+/*
         if( this._status.norm ){
-            //Datepicker.utils.addClass( this.element.calendarcontent , 'calendar_' + this._status.norm );
+            Datepicker.utils.addClass( this.element.calendarcontent , 'calendar_' + this._status.norm );
         }
+*/
 
     };
 
