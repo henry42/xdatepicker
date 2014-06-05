@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style/ui.css">
+  <script src="js/xdatepicker.js"></script>
+  <script src="js/xdatepicker.animation.js"></script>
+  <script src="js/xdatepicker.lang.js"></script>
+  <script src="js/xdatepicker.tip.js"></script>
+  <script src="js/xdaterangepicker.js"></script>
+</head>
+<body>
+  <h1>日历DEMO</h1>
+  <div>
+    <p>单日历</p>
+    <p><input type="text" id="dp"></p>
+  </div>
+  <div>
+    <p>双日历</p>
+    <p><input type="text" id="dpFrom"> <input type="text" id="dpTo"></p>
+  </div>
+</body>
+<script>
+  new XDatepicker(document.getElementById('dp'),{
+    stepAnimation: 500,
+    numberOfMonths : 2
+  });
+
+
+  new XDateRangePicker(document.getElementById('dpFrom'),document.getElementById('dpTo'),{
+    numberOfMonths : 1,
+    rules : '1D,1D,3M'
+  });
+</script>
+</html>
